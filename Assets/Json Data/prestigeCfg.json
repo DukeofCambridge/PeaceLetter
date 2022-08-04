@@ -1,0 +1,51 @@
+[
+    {
+        "incomeFactor": "1",
+        "maxTask": "2",
+        "newTask": "1",
+        "prestigeLevel": "1",
+        "taskLevel": [0]
+    },
+    {
+        "incomeFactor": "1.05",
+        "maxTask": "4",
+        "newTask": "2",
+        "prestigeLevel": "2",
+        "taskLevel": [1]
+    },
+    {
+        "incomeFactor": "1.1025",
+        "maxTask": "4",
+        "newTask": "2",
+        "prestigeLevel": "3",
+        "taskLevel": [1]
+    },
+    {
+        "incomeFactor": "1.1576",
+        "maxTask": "6",
+        "newTask": "3",
+        "prestigeLevel": "4",
+        "taskLevel": [1,2]
+    },
+    {
+        "incomeFactor": "1.2155",
+        "maxTask": "6",
+        "newTask": "3",
+        "prestigeLevel": "5",
+        "taskLevel": [1,2]
+    },
+    {
+        "incomeFactor": "1.2763",
+        "maxTask": "8",
+        "newTask": "4",
+        "prestigeLevel": "6",
+        "taskLevel": [1,2,3]
+    },
+    {
+        "incomeFactor": "1.34",
+        "maxTask": "8",
+        "newTask": "4",
+        "prestigeLevel": "7",
+        "taskLevel": [1,2,3]
+    }
+]

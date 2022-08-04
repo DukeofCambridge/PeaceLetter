@@ -1,0 +1,135 @@
+{
+    "PrestigeLevel": 1,
+    "PrestigeExp": 0,
+    "Wealth": 100,
+    "MessengerInfo": [
+        {
+            "Id": 1,
+            "Name": "兰宴",
+            "Energy": 1,
+            "Knowledge": 1,
+            "Social": 1,
+            "Trust": 3,
+            "Fatigue": 10,
+            "EXP": 0,
+            "Level": 0,
+            "State": 0,
+            "Possess":false,
+            "BuffIdList":[3]
+        },
+        {
+            "Id": 2,
+            "Name": "承禄",
+            "Energy": 1,
+            "Knowledge": 1,
+            "Social": 0,
+            "Trust": 3,
+            "Fatigue": 10,
+            "EXP": 0,
+            "Level": 0,
+            "State": 0,
+            "Possess":true,
+            "BuffIdList":[1]
+        },
+        {
+            "Id": 3,
+            "Name": "靳伯",
+            "Energy": 1,
+            "Knowledge": 2,
+            "Social": 2,
+            "Trust": 3,
+            "Fatigue": 10,
+            "EXP": 0,
+            "Level": 0,
+            "State": 0,
+            "Possess":true,
+            "BuffIdList":[2]
+        }
+    ],
+    "tasks":[
+        {
+            "taskID":1,
+            "taskName":"雁隐于市",
+            "taskDesc":"平叔委托的信，内容不明，据其说法是要退出江湖，同友人道别",
+            "targetID":9,
+            "type":0,
+            "completed":1,
+            "level": 0,
+            "entries":[],
+            "taskSeason":"孟春上旬",
+            "sender":"平叔",
+            "receiver":"陆三贵",
+            "address":"锦浦坊雁社",
+            "Buff":0
+        },
+        {
+            "taskID":2,
+            "taskName":"师傅的留信1",
+            "taskDesc":"是寒游留给兰晏的信，没有额外的信息了。去龙州打听消息要很久，让兰晏准备充分再出发吧。",
+            "targetID":11,
+            "type":0,
+            "completed":1,
+            "level": 0,
+            "entries":[    {
+                "type": "Special",
+                "desc": "是寒游留给兰晏的信，她立志要自己送完......",
+                "effect": "只能由兰晏送信",
+                "entryID": "22",
+                "entryName": "再继遗业",
+                "level": "0",
+                "value": 0
+            }],
+            "taskSeason":"孟春下旬",
+            "sender":"平叔",
+            "receiver":"吕自柔",
+            "address":"",
+            "Buff":0
+        },
+        {
+            "taskID":3,
+            "taskName":"师傅的留信2",
+            "taskDesc":"是寒游留给兰晏的信，没有额外的信息了。去文州打听消息要很久，让兰晏准备充分再出发吧。",
+            "targetID":21,
+            "type":0,
+            "completed":1,
+            "level": 0,
+            "entries":[    {
+                "type": "Special",
+                "desc": "是寒游留给兰晏的信，她立志要自己送完......",
+                "effect": "只能由兰晏送信",
+                "entryID": "22",
+                "entryName": "再继遗业",
+                "level": "0",
+                "value": 0
+            }],
+            "taskSeason":"孟春下旬",
+            "sender":"平叔",
+            "receiver":"段九郎",
+            "address":"",
+            "Buff":0
+        }
+    ],
+
+    "RecipePossessList":[
+        false,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,false,
+        false,false,false,false
+    ],
+    "RecipeTimesList":[
+        0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,0,
+        0,0,0,0,0,0
+    ],
+    
+    "ObjectInfo":[],
+    "CurMonth":0,
+    "CurDay":0,
+    "CurHour":7,
+    "CurQuarterHour":0
+}

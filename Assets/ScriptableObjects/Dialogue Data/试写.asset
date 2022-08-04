@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae03274b14664f8f8f62c4bc60add8b, type: 3}
+  m_Name: "\u8BD5\u5199"
+  m_EditorClassIdentifier: 
+  startConditions:
+    keys: 1b000000
+    values:
+    - id: 27
+      nextId: 1c000000
+      targetNameStr: "\u6768\u6DEE"
+      startDateStr: "\u5B5F\u6625\u4E0A\u65EC\u8FB0\u6B63"
+      endDateStr: "\u5B5F\u6625\u4E0A\u65EC\u5348\u521D"
+      channelStr: channel_1
+      contentStr: 
+  messages:
+    keys: 2e0000002700000026000000250000002c000000290000001e0000001d0000001c000000
+    values:
+    - id: 46
+      nextId: 
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u96C1\u793E\u5C0F\u5C71\u7684\u540D\u53F7\uFF0C\u73B0\u5728\u574A\u5185\u662F\u65E0\u4EBA\u4E0D\u77E5\u554A\u3002"
+    - id: 39
+      nextId: 2e000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u6709\u5173\u4F60\u7684\u4F20\u8A00\uFF0C\u5E74\u524D\u5C31\u5728\u574A\u5185\u4F20\u5F00\u4E86\u3002"
+    - id: 38
+      nextId: 27000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u5C0F\u5C71\u5144\u6709\u6240\u4E0D\u77E5\u3002"
+    - id: 37
+      nextId: 26000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u90CE\u541B\u5C31\u662F\u6211\u5B85\u5B50\u5BF9\u9762\uFF0C\u90A3\u4FE1\u793E\u7684\u65B0\u8001\u677F\u5C0F\u5C71\u4E86\uFF1F"
+    - id: 44
+      nextId: 25000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u90CE\u541B\u83AB\u6253\u8BF3\u8BED\u4E86\u3002"
+    - id: 41
+      nextId: 2b000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u90A3\u662F\u6765\u897F\u5E02\u505A\u4E70\u5356\u7684\uFF1F"
+    - id: 30
+      nextId: e2ffffff
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u90CE\u541B\u662F\u65B0\u642C\u6765\u8FD9\u9526\u6D66\u574A\u7684\u5417\uFF1F"
+    - id: 29
+      nextId: 1e000000
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u5728\u4E0B\u5E9C\u5B66\u5B66\u751F\u6768\u6DEE\u3002"
+    - id: 28
+      nextId: e4ffffff
+      nameStr: "\u6768\u6DEE"
+      textStr: "\u597D\u50CF\u4ECE\u672A\u5728\u8FD9\u4E2A\u574A\u91CC\u89C1\u8FC7\u90CE\u541B"
+  actions:
+    keys: 3400000035000000
+    values:
+    - id: 52
+      nextId: 
+      channelStr: channel_0
+      contentStr: "\u8FDB\u5165\u9001\u793C\u754C\u9762"
+    - id: 53
+      nextId: 
+      channelStr: channel_0
+      contentStr: "\u8FDB\u5165\u5BB4\u8BF7\u754C\u9762"
+  choices:
+    keys: e2ffffffe4ffffff
+    values:
+    - id: -30
+      nextId: 2300000024000000
+      followingNodes:
+      - id: 35
+        nextId: 25000000
+        choiceStr: "\u662F"
+      - id: 36
+        nextId: 29000000
+        choiceStr: "\u4E0D\u662F"
+    - id: -28
+      nextId: 2f000000300000003200000033000000
+      followingNodes:
+      - id: 47
+        nextId: 1d000000
+        choiceStr: "\u95F2\u804A"
+      - id: 48
+        nextId: 34000000
+        choiceStr: "\u9001\u793C"
+      - id: 50
+        nextId: 35000000
+        choiceStr: "\u5BB4\u8BF7"
+      - id: 51
+        nextId: 
+        choiceStr: "\u79BB\u5F00"
+  choiceNodes:
+    keys: 230000002b000000240000002f000000300000003200000033000000
+    values:
+    - id: 35
+      nextId: 25000000
+      choiceStr: "\u662F"
+    - id: 43
+      nextId: 2c000000
+      choiceStr: "\u662F\u6765\u73A9\u6E38\u620F\u7684"
+    - id: 36
+      nextId: 29000000
+      choiceStr: "\u4E0D\u662F"
+    - id: 47
+      nextId: 1d000000
+      choiceStr: "\u95F2\u804A"
+    - id: 48
+      nextId: 34000000
+      choiceStr: "\u9001\u793C"
+    - id: 50
+      nextId: 35000000
+      choiceStr: "\u5BB4\u8BF7"
+    - id: 51
+      nextId: 
+      choiceStr: "\u79BB\u5F00"
+  branches:
+    keys: 
+    values: []
+  branchNodes:
+    keys: 
+    values: []

@@ -1,0 +1,30 @@
+[
+    {
+        "name":"daytime",
+        "lightIntensity": 1,
+        "lightColor": "FFFFFF",
+        "type":"global"
+
+    },
+    {
+        "name":"dusk",
+        "lightIntensity":1,
+        "lightColor":"FFAB74",
+        "type":"global"
+    },
+    {
+        "name":"night",
+        "lightIntensity": 0.6,
+        "lightColor": "4355AE",
+        "type":"global"
+    },
+    {
+        "name":"lantern",
+        "lightIntensity":0.8,
+        "lightColor":"E7BA49",
+        "type":"spot",
+        "range":30,
+        "innerAngle":70,
+        "outerAngle":240
+    }
+]

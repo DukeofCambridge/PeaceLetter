@@ -1,0 +1,231 @@
+{
+    "drawflow": {
+        "Home": {
+            "data": {
+                "1": {
+                    "id": 1,
+                    "name": "start",
+                    "data": {
+                        "target": "a",
+                        "start": "v",
+                        "end": "c",
+                        "channel": "channel_0",
+                        "content": "d"
+                    },
+                    "class": "start",
+                    "html": "\n          <div>\n            <div class=\"title-box\">开始条件</div>\n            <div class=\"box\">\n                <p>对象</p>\n                <input type=\"text\" df-target><br><br>\n                <p>开始时间</p>\n                <input type=\"text\" df-start><br>\n                <p>结束时间</p>\n                <input type=\"text\" df-end><br><br>\n                <p>触发条件</p>\n                <select df-channel>\n                <option value=\"channel_1\">时间</option>\n                <option value=\"channel_2\">是否第一次对话</option>\n                <option value=\"channel_3\">背包里有这件物品</option>\n                <option value=\"channel_0\">其他</option>\n                </select>\n                <br><br>\n                <input type=\"text\" df-content><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {},
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "2",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": -164,
+                    "pos_y": 22
+                },
+                "2": {
+                    "id": 2,
+                    "name": "dialog",
+                    "data": {
+                        "name": "e",
+                        "text": "f"
+                    },
+                    "class": "dialog",
+                    "html": "\n          <div>\n            <div class=\"title-box\">对话</div>\n            <div class=\"box\">\n              <p>名称</p>\n              <input type=\"text\" df-name><br><br>\n              <p>对话</p>\n              <textarea df-text></textarea>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "1",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "4",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "6",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 130,
+                    "pos_y": 35
+                },
+                "3": {
+                    "id": 3,
+                    "name": "action",
+                    "data": {
+                        "channel": "channel_0",
+                        "content": "i"
+                    },
+                    "class": "action",
+                    "html": "\n          <div>\n            <div class=\"title-box\">事件</div>\n            <div class=\"box\">\n                <select df-channel>\n                <option value=\"channel_1\">好感度提升</option>\n                <option value=\"channel_2\">好感度节点</option>\n                <option value=\"channel_3\">获得物品</option>\n                <option value=\"channel_0\">其他</option>\n                </select>\n                <br><br>\n                <input type=\"text\" df-content><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "4",
+                                    "input": "output_1"
+                                },
+                                {
+                                    "node": "6",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "7",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "8",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 667,
+                    "pos_y": 156
+                },
+                "4": {
+                    "id": 4,
+                    "name": "branch-node",
+                    "data": {
+                        "condition": "g"
+                    },
+                    "class": "branch-node",
+                    "html": "\n          <div>\n            <div class=\"title-box\">分支</div>\n            <div class=\"box\">\n                <p>条件</p>\n                <input type=\"text\" df-condition><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "2",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "3",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 415,
+                    "pos_y": 25
+                },
+                "6": {
+                    "id": 6,
+                    "name": "branch-node",
+                    "data": {
+                        "condition": "h"
+                    },
+                    "class": "branch-node",
+                    "html": "\n          <div>\n            <div class=\"title-box\">分支</div>\n            <div class=\"box\">\n                <p>条件</p>\n                <input type=\"text\" df-condition><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "2",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "3",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 420,
+                    "pos_y": 319
+                },
+                "7": {
+                    "id": 7,
+                    "name": "choice-node",
+                    "data": {
+                        "choice": "j"
+                    },
+                    "class": "choice-node",
+                    "html": "\n          <div>\n            <div class=\"title-box\">选项</div>\n            <div class=\"box\">\n                <input type=\"text\" df-choice><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "3",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 1026,
+                    "pos_y": 98
+                },
+                "8": {
+                    "id": 8,
+                    "name": "choice-node",
+                    "data": {
+                        "choice": "k"
+                    },
+                    "class": "choice-node",
+                    "html": "\n          <div>\n            <div class=\"title-box\">选项</div>\n            <div class=\"box\">\n                <input type=\"text\" df-choice><br><br>\n            </div>\n          </div>\n          ",
+                    "typenode": false,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "node": "3",
+                                    "input": "output_1"
+                                }
+                            ]
+                        }
+                    },
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 1055,
+                    "pos_y": 330
+                }
+            }
+        }
+    }
+}

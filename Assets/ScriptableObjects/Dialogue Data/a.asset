@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae03274b14664f8f8f62c4bc60add8b, type: 3}
+  m_Name: a
+  m_EditorClassIdentifier: 
+  startConditions:
+    keys: 01000000
+    values:
+    - id: 1
+      nextId: 02000000
+      targetNameStr: a
+      startDateStr: v
+      endDateStr: c
+      channelStr: channel_0
+      contentStr: d
+  messages:
+    keys: 02000000
+    values:
+    - id: 2
+      nextId: feffffff
+      nameStr: e
+      textStr: f
+  actions:
+    keys: 03000000
+    values:
+    - id: 3
+      nextId: fdffffff
+      channelStr: channel_0
+      contentStr: i
+  choices:
+    keys: fdffffff
+    values:
+    - id: -3
+      nextId: 0700000008000000
+      followingNodes:
+      - id: 7
+        nextId: 
+        choiceStr: j
+      - id: 8
+        nextId: 
+        choiceStr: k
+  choiceNodes:
+    keys: 0700000008000000
+    values:
+    - id: 7
+      nextId: 
+      choiceStr: j
+    - id: 8
+      nextId: 
+      choiceStr: k
+  branches:
+    keys: feffffff
+    values:
+    - id: -2
+      nextId: 0400000006000000
+      followingNodes:
+      - id: 4
+        nextId: 03000000
+        conditionStr: g
+      - id: 6
+        nextId: 03000000
+        conditionStr: h
+  branchNodes:
+    keys: 0400000006000000
+    values:
+    - id: 4
+      nextId: 03000000
+      conditionStr: g
+    - id: 6
+      nextId: 03000000
+      conditionStr: h

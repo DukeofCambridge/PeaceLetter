@@ -1,0 +1,200 @@
+[
+    {
+        "type": "Speed",
+        "desc": "听闻这一趟的路途上多雨......",
+        "effect": "移速降低20%",
+        "entryID": "1",
+        "entryName": "道路泥泞",
+        "level": "1",
+        "value": "0.8"
+    },
+    {
+        "type": "Speed",
+        "desc": "听闻这一趟的路途上多雨......",
+        "effect": "移速降低30%",
+        "entryID": "2",
+        "entryName": "道路泥泞",
+        "level": "2",
+        "value": "0.3"
+    },
+    {
+        "type": "Fatigue",
+        "desc": "这一趟似乎会很累的样子......",
+        "effect": "疲劳值消耗增加2",
+        "entryID": "3",
+        "entryName": "劳神费力",
+        "level": "1",
+        "value": "2"
+    },
+    {
+        "type": "Fatigue",
+        "desc": "这一趟似乎会很累的样子......",
+        "effect": "疲劳值消耗增加3",
+        "entryID": "4",
+        "entryName": "劳神费力",
+        "level": "2",
+        "value": "3"
+    },
+    {
+        "type": "Fatigue",
+        "desc": "这一趟似乎会很累的样子......",
+        "effect": "疲劳值消耗增加5",
+        "entryID": "5",
+        "entryName": "劳神费力",
+        "level": "3",
+        "value": "5"
+    },
+    {
+        "type": "NoGoods",
+        "desc": "这一趟路途经过的关卡太多，负担不起税费......",
+        "effect": "任务无法携带倒卖商品",
+        "entryID": "6",
+        "entryName": "苛捐杂税",
+        "level": "1",
+        "value": ""
+    },
+    {
+        "type": "EnergyLimit",
+        "desc": "似乎要跨越山河......",
+        "effect": "任务属性要求 体力3",
+        "entryID": "7",
+        "entryName": "翻山越岭",
+        "level": "1",
+        "value": "3"
+    },
+    {
+        "type": "EnergyLimit",
+        "desc": "似乎要跨越山河......",
+        "effect": "任务属性要求 体力6",
+        "entryID": "8",
+        "entryName": "翻山越岭",
+        "level": "2",
+        "value": "6"
+    },
+    {
+        "type": "EnergyLimit",
+        "desc": "似乎要跨越山河......",
+        "effect": "任务属性要求 体力9",
+        "entryID": "9",
+        "entryName": "翻山越岭",
+        "level": "3",
+        "value": "9"
+    },
+    {
+        "type": "KnowLimit",
+        "desc": "委托人要求尽快送达......",
+        "effect": "任务属性要求 学识3",
+        "entryID": "10",
+        "entryName": "十万火急",
+        "level": "1",
+        "value": "3"
+    },
+    {
+        "type": "KnowLimit",
+        "desc": "委托人要求尽快送达......",
+        "effect": "任务属性要求 学识6",
+        "entryID": "11",
+        "entryName": "十万火急",
+        "level": "2",
+        "value": "6"
+    },
+    {
+        "type": "KnowLimit",
+        "desc": "委托人要求尽快送达......",
+        "effect": "任务属性要求 学识9",
+        "entryID": "12",
+        "entryName": "十万火急",
+        "level": "3",
+        "value": "9"
+    },
+    {
+        "type": "SocialLimit",
+        "desc": "收信人的所在地似乎不太详细，需要打听打听......",
+        "effect": "任务属性要求 社交3",
+        "entryID": "13",
+        "entryName": "语焉不详",
+        "level": "1",
+        "value": "3"
+    },
+    {
+        "type": "SocialLimit",
+        "desc": "收信人的所在地似乎不太详细，需要打听打听......",
+        "effect": "任务属性要求 社交6",
+        "entryID": "14",
+        "entryName": "语焉不详",
+        "level": "2",
+        "value": "6"
+    },
+    {
+        "type": "SocialLimit",
+        "desc": "收信人的所在地似乎不太详细，需要打听打听......",
+        "effect": "任务属性要求 社交9",
+        "entryID": "15",
+        "entryName": "语焉不详",
+        "level": "3",
+        "value": "9"
+    },
+    {
+        "type": "Income",
+        "desc": "这一趟似乎额外要花钱的地方不少......",
+        "effect": "降低任务结算收入10%",
+        "entryID": "16",
+        "entryName": "靡费甚多",
+        "level": "1",
+        "value": "0.9"
+    },
+    {
+        "type": "Income",
+        "desc": "这一趟似乎额外要花钱的地方不少......",
+        "effect": "降低任务结算收入20%",
+        "entryID": "17",
+        "entryName": "靡费甚多",
+        "level": "2",
+        "value": "0.8"
+    },
+    {
+        "type": "Income",
+        "desc": "这一趟似乎额外要花钱的地方不少......",
+        "effect": "降低任务结算收入30%",
+        "entryID": "18",
+        "entryName": "靡费甚多",
+        "level": "3",
+        "value": "0.7"
+    },
+    {
+        "type": "Exp",
+        "desc": "看起来不会有太多的收获......",
+        "effect": "降低任务获得经验10%",
+        "entryID": "19",
+        "entryName": "劳而少功",
+        "level": "1",
+        "value": "0.9"
+    },
+    {
+        "type": "Exp",
+        "desc": "看起来不会有太多的收获......",
+        "effect": "降低任务获得经验20%",
+        "entryID": "20",
+        "entryName": "劳而少功",
+        "level": "2",
+        "value": "0.8"
+    },
+    {
+        "type": "Exp",
+        "desc": "看起来不会有太多的收获......",
+        "effect": "降低任务获得经验30%",
+        "entryID": "21",
+        "entryName": "劳而少功",
+        "level": "3",
+        "value": "0.7"
+    },
+    {
+        "type": "Special",
+        "desc": "是寒游留给兰晏的信，她立志要自己送完......",
+        "effect": "只能由兰晏送信",
+        "entryID": "22",
+        "entryName": "再继遗业",
+        "level": "0",
+        "value": 0
+    }
+]

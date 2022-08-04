@@ -1,0 +1,149 @@
+[
+    {
+        "distance": "63.6",
+        "fatigue": "3",
+        "income": "21",
+        "name": "蜀州",
+        "prestige": "26"
+    },
+    {
+        "distance": "83.4",
+        "fatigue": "3",
+        "income": "28",
+        "name": "简州",
+        "prestige": "22"
+    },
+    {
+        "distance": "85.9",
+        "fatigue": "3",
+        "income": "28",
+        "name": "眉州",
+        "prestige": "21"
+    },
+    {
+        "distance": "88.1",
+        "fatigue": "3",
+        "income": "29",
+        "name": "彭州",
+        "prestige": "21"
+    },
+    {
+        "distance": "90.4",
+        "fatigue": "3",
+        "income": "30",
+        "name": "邛州",
+        "prestige": "20"
+    },
+    {
+        "distance": "95.3",
+        "fatigue": "3",
+        "income": "32",
+        "name": "陵州",
+        "prestige": "20"
+    },
+    {
+        "distance": "110.4",
+        "fatigue": "4",
+        "income": "36",
+        "name": "汉州",
+        "prestige": "18"
+    },
+    {
+        "distance": "130.8",
+        "fatigue": "4",
+        "income": "42",
+        "name": "绵州",
+        "prestige": "16"
+    },
+    {
+        "distance": "162.2",
+        "fatigue": "4",
+        "income": "53",
+        "name": "雅州",
+        "prestige": "14"
+    },
+    {
+        "distance": "173.2",
+        "fatigue": "4",
+        "income": "57",
+        "name": "资州",
+        "prestige": "13"
+    },
+    {
+        "distance": "195.6",
+        "fatigue": "5",
+        "income": "64",
+        "name": "龙州",
+        "prestige": "12"
+    },
+    {
+        "distance": "197.1",
+        "fatigue": "5",
+        "income": "64",
+        "name": "普州",
+        "prestige": "12"
+    },
+    {
+        "distance": "215.2",
+        "fatigue": "5",
+        "income": "70",
+        "name": "荣州",
+        "prestige": "11"
+    },
+    {
+        "distance": "296.3",
+        "fatigue": "5",
+        "income": "96",
+        "name": "戎州",
+        "prestige": "9"
+    },
+    {
+        "distance": "312.6",
+        "fatigue": "5",
+        "income": "101",
+        "name": "剑州",
+        "prestige": "9"
+    },
+    {
+        "distance": "315.5",
+        "fatigue": "5",
+        "income": "102",
+        "name": "泸州",
+        "prestige": "9"
+    },
+    {
+        "distance": "355.4",
+        "fatigue": "5",
+        "income": "114",
+        "name": "薛州",
+        "prestige": "8"
+    },
+    {
+        "distance": "367.5",
+        "fatigue": "5",
+        "income": "118",
+        "name": "黎州",
+        "prestige": "8"
+    },
+    {
+        "distance": "443.3",
+        "fatigue": "5",
+        "income": "143",
+        "name": "翼州",
+        "prestige": "7"
+    },
+    {
+        "distance": "469.9",
+        "fatigue": "5",
+        "income": "152",
+        "name": "靖州",
+        "prestige": "6"
+    },
+    {
+        "distance": "501.7",
+        "fatigue": "5",
+        "income": "161",
+        "name": "文州",
+        "prestige": "6"
+    }
+]

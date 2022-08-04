@@ -1,0 +1,42 @@
+[
+    {
+        "MessengerLevel": 0,
+        "UpgradeNeedEXP": 100,
+        "TaskEarnEXPFactor": 1
+    },
+    {
+        "MessengerLevel": 1,
+        "UpgradeNeedEXP": 100,
+        "TaskEarnEXPFactor": 1
+    },
+    {
+        "MessengerLevel": 2,
+        "UpgradeNeedEXP": 300,
+        "TaskEarnEXPFactor": 1
+    },
+    {
+        "MessengerLevel": 3,
+        "UpgradeNeedEXP": 300,
+        "TaskEarnEXPFactor": 0.7
+    },
+    {
+        "MessengerLevel": 4,
+        "UpgradeNeedEXP": 600,
+        "TaskEarnEXPFactor": 0.7
+    },
+    {
+        "MessengerLevel": 5,
+        "UpgradeNeedEXP": 600,
+        "TaskEarnEXPFactor": 0.6
+    },
+    {
+        "MessengerLevel": 6,
+        "UpgradeNeedEXP": 800,
+        "TaskEarnEXPFactor": 0.6
+    },
+    {
+        "MessengerLevel": 7,
+        "UpgradeNeedEXP": "",
+        "TaskEarnEXPFactor": 0.6
+    }
+]

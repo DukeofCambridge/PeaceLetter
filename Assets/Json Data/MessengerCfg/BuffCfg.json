@@ -1,0 +1,831 @@
+[
+    {
+        "id":1,
+        "name":"少不经事",
+        "category":"inherent",
+        "effectList":[
+            {
+                "description":"升级所需经验减少20%",
+                "effect":0,
+                "value":-0.2,
+                "valueType":"percentage",
+                "probability": 1
+            },
+            {
+                "description":"初始社交减少1点",
+                "effect":1,
+                "value":-1,
+                "valueType":"absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":2,
+        "name":"老成于事",
+        "category":"inherent",
+        "effectList":[
+            {
+                "description":"升级所需经验增加10%",
+                "effect":0,
+                "value":0.1,
+                "valueType":"percentage",
+                "probability": 1
+            },
+            {
+                "description":"初始社交增加1点",
+                "effect":2,
+                "value":1,
+                "valueType":"absolute",
+                "probability": 1
+            },
+            {
+                "description":"初始学识增加1点",
+                "effect":3,
+                "value":1,
+                "valueType":"absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":3,
+        "name":"迷途寻津",
+        "category":"inherent",
+        "effectList":[
+            {
+                "description":"每两级额外获得一点可分配属性点",
+                "effect":4,
+                "value":1,
+                "valueType":"absolute",
+                "probability": 1
+            },
+            {
+                "description":"送信所需时间减少20%",
+                "effect":5,
+                "value":-0.2,
+                "valueType":"percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":4,
+        "name":"搬弄口舌",
+        "category":"inherent",
+        "effectList":[
+            {
+                "description":"初始社交加1",
+                "effect":2,
+                "value":1,
+                "valueType":"absolute",
+                "probability": 1
+            },
+            {
+                "description":"商品倒卖收入+50%",
+                "effect":6,
+                "value":0.5,
+                "valueType":"percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":5,
+        "name":"持家有道",
+        "category":"inherent",
+        "effectList":[]
+    },
+    {
+        "id":6,
+        "name":"多病缠身",
+        "category":"inherent",
+        "effectList":[
+            {
+                "description":"送信件所需的时间增加20%",
+                "effect":5,
+                "value":0.2,
+                "valueType":"percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":7,
+        "name":"重义疏财",
+        "category":"inherent",
+        "effectList":[]
+    },
+    {
+        "id":8,
+        "name":"久谙世故",
+        "category":"inherent",
+        "effectList":[]
+    },
+    {
+        "id":9,
+        "name":"徇利贪夫",
+        "category":"inherent",
+        "effectList":[]
+    },
+    {
+        "id": 10,
+        "category":"task",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "preconditions": "去同一目的地执行超过2次小于4次任务",
+        "effectList": [
+            {
+                "description": "对此目的地移动速度增加0.3/时辰",
+                "effect": 7,
+                "value": 0.3,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "category":"task",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "preconditions": "去同一目的地执行超过7次任务",
+        "effectList": [
+            {
+                "description": "对此目的地移动速度增加0.45/时辰",
+                "effect": 7,
+                "value": 0.45,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "任务收入增加15%",
+                "effect": 8,
+                "value": 0.15,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "category":"task",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "preconditions": "执行4次任务",
+        "effectList": [
+            {
+                "description": "任务收入增加10%",
+                "effect": 8,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id":13,
+        "category":"task",
+        "type":"forever",
+        "lastRounds":"infinity",
+        "preconditions":"执行10次任务",
+        "effectList": [
+            {
+                "description": "任务收入增加20%",
+                "effect": 8,
+                "value": 0.2,
+                "valueType": "percentage",
+                "probability": 1
+            },
+            {
+                "description":"信任增加3",
+                "effect":9,
+                "value":3,
+                "valueType":"absolute",
+                "probability":1
+            }
+        ]
+    },
+    {
+        "id":14,
+        "category":"task",
+        "type":"forever",
+        "lastRounds":"infinity",
+        "preconditions":"执行3次疲劳值消耗大于3的任务",
+        "effectList":[
+            {
+                "description":"疲劳值回复速度增加0.05/时辰",
+                "effect":10,
+                "value":0.05,
+                "valueType":"absolute",
+                "probability":1
+            }
+        ]
+    },
+    {
+        "id":15,
+        "category":"task",
+        "type":"forever",
+        "lastRounds":"infinity",
+        "preconditions":"执行9次疲劳值消耗大于3的任务",
+        "effectList":[
+            {
+                "description":"疲劳值回复速度增加0.1/时辰",
+                "effect":10,
+                "value":0.1,
+                "valueType":"absolute",
+                "probability":1
+            },
+            {
+                "description":"信任增加1",
+                "effect":9,
+                "value":1,
+                "valueType":"absolute",
+                "probability":1
+            }
+        ]
+    },
+    {
+        "id":16,
+        "category":"task",
+        "type":"forever",
+        "lastRounds":"infinity",
+        "preconditions":"连续执行3次距离大于200km的任务",
+        "effectList":[
+            {
+                "description":"疲劳值回复速度增加0.05/时辰",
+                "effect":10,
+                "value":0.05,
+                "valueType":"absolute",
+                "probability":1
+            },
+            {
+                "description":"移动速度增加0.3/时辰",
+                "effect":7,
+                "value":0.3,
+                "valueType":"absolute",
+                "probability":1
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"精明强干·初级",
+        "effectList": [
+            {
+                "description": "任务获得经验增加5%",
+                "effect": 0,
+                "value": 0.05,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"精明强干·中级",
+        "effectList": [
+            {
+                "description": "任务获得经验增加10%",
+                "effect": 0,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"精明强干·高级",
+        "effectList": [
+            {
+                "description": "任务获得经验增加15%",
+                "effect": 0,
+                "value": 0.15,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"闲情惬意·初级",
+        "effectList": [
+            {
+                "description": "升级所需经验增加10%",
+                "effect": 0,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"闲情惬意·中级",
+        "effectList": [
+            {
+                "description": "升级所需经验增加20%",
+                "effect": 0,
+                "value": 0.2,
+                "valueType": "percentage",
+                "probability": 1
+            },
+            {
+                "description": "任务疲劳消耗-1",
+                "effect": 13,
+                "value": -1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"闲情惬意·高级",
+        "effectList": [
+            {
+                "description": "升级所需经验增加20%",
+                "effect": 0,
+                "value": 0.2,
+                "valueType": "percentage",
+                "probability": 1
+            },
+            {
+                "description": "任务疲劳消耗-2",
+                "effect": 13,
+                "value": -2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"负重致远·初级",
+        "effectList": [
+            {
+                "description": "10点额外负重",
+                "effect": 14,
+                "value": 10,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "1点信任",
+                "effect": 1,
+                "value": 1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"负重致远·中级",
+        "effectList": [
+            {
+                "description": "15点额外负重",
+                "effect": 14,
+                "value": 15,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "2点信任",
+                "effect": 1,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"负重致远·高级",
+        "effectList": [
+            {
+                "description": "30点额外负重",
+                "effect": 14,
+                "value": 30,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "2点信任",
+                "effect": 1,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"仗义行仁·初级",
+        "effectList": [
+            {
+                "description": "信任+2",
+                "effect": 1,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"仗义行仁·中级",
+        "effectList": [
+            {
+                "description": "信任+3",
+                "effect": 1,
+                "value": 3,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"仗义行仁·高级",
+        "effectList": [
+            {
+                "description": "信任+3",
+                "effect": 1,
+                "value": 3,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "任务完成时获得1点信任",
+                "effect": 18,
+                "value": 1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"财运亨通·中级",
+        "effectList": [
+            {
+                "description": "商品倒卖收入增加15%",
+                "effect": 6,
+                "value": 0.15,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"财运亨通·高级",
+        "effectList": [
+            {
+                "description": "商品倒卖收入增加30%",
+                "effect": 6,
+                "value": 0.3,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"健步如飞·初级",
+        "effectList": [
+            {
+                "description": "信使移速增加10%",
+                "effect": 7,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"健步如飞·高级",
+        "effectList": [
+            {
+                "description": "信使移速增加30%",
+                "effect": 7,
+                "value": 0.3,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"学以致用·初级",
+        "effectList": [
+            {
+                "description": "每点学识增加5%的任务收入",
+                "effect": 15,
+                "value": 0.05,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"学以致用·高级",
+        "effectList": [
+            {
+                "description": "每点学识增加10%的任务收入",
+                "effect": 15,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"生龙活虎·初级",
+        "effectList": [
+            {
+                "description": "每点体力增加0.05/时辰的疲劳恢复速度",
+                "effect": 16,
+                "value": 0.05,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"生龙活虎·高级",
+        "effectList": [
+            {
+                "description": "每点体力增加0.1/时辰的疲劳恢复速度",
+                "effect": 16,
+                "value": 0.1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"以礼载道·初级",
+        "effectList": [
+            {
+                "description": "每点社交1点的负重加成",
+                "effect": 17,
+                "value": 1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"以礼载道·高级",
+        "effectList": [
+            {
+                "description": "每点社交2点的负重加成",
+                "effect": 17,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"急于求成·初级",
+        "effectList": [
+            {
+                "description": "移速增加0.5/时辰",
+                "effect": 7,
+                "value": 0.5,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "任务疲劳消耗+2",
+                "effect": 13,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "category":"task_random",
+        "type": "forever",
+        "lastRounds": "infinity",
+        "name":"急于求成·中级",
+        "effectList": [
+            {
+                "description": "移速增加1/时辰",
+                "effect": 7,
+                "value": 1,
+                "valueType": "absolute",
+                "probability": 1
+            },
+            {
+                "description": "任务疲劳消耗+4",
+                "effect": 13,
+                "value": 4,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "该信使每天有50%的概率获得1点信任",
+                "effect": 11,
+                "value": 1,
+                "valueType": "absolute",
+                "probability": 0.5
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "该信使每天有75%的概率获得2点信任",
+                "effect": 11,
+                "value": 2,
+                "valueType": "absolute",
+                "probability": 0.75
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "下次任务收入增加10%",
+                "effect": 8,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "下次任务收入增加30%",
+                "effect": 8,
+                "value": 0.3,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "疲劳值回复速度增加0.05/时辰",
+                "effect": 10,
+                "value": 0.05,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "疲劳值回复速度增加0.1/时辰",
+                "effect": 10,
+                "value": 0.1,
+                "valueType": "absolute",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "下次任务获得经验增加10%",
+                "effect": 0,
+                "value": 0.1,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "category":"task_random",
+        "type": "temporary",
+        "lastRounds": 3,
+        "effectList": [
+            {
+                "description": "下次任务获得经验增加20%",
+                "effect": 0,
+                "value": 0.2,
+                "valueType": "percentage",
+                "probability": 1
+            }
+        ]
+    }
+]
