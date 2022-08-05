@@ -6,17 +6,20 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     static public Slot instance;
-    public 物品 slotItem;
+    public Item slotItem;
     public Image slotImage;
     public Text slotNumber;
 
+    static public string tempname;
+
     public void ItemOnClick()
     {
-        InventoryManager.UpdateItemInfo(slotItem.物品描述,slotImage);
+        InventoryManager.UpdateItemInfo(slotItem.ItemDescription,slotImage);
     }
-
-    public static 物品 Confirm()
+    
+    public void ShopItemOnClick()
     {
-        return instance.slotItem;
+        tempname = "";
+        tempname = slotItem.ItemName;
     }
 }

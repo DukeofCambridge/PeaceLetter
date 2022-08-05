@@ -6,9 +6,9 @@ using System.Reflection;
 
 public class InventoryManager : MonoBehaviour
 {
-    static InventoryManager instance;
+    public static InventoryManager instance;
 
-    public 加载物品 mybag;
+    public Bag mybag;
     public GameObject slotGrid;
     public Slot slotPrefab;
     public Text iteminfo;
@@ -30,17 +30,18 @@ public class InventoryManager : MonoBehaviour
     public static void UpdateItemInfo(string itemdesciption,Image itemImage)
     {
         instance.iteminfo.text = itemdesciption;
-        instance.Img = itemImage;
+        instance.Img.sprite = itemImage.sprite;
+        instance.Img.transform.localScale=new Vector3(3,3,3);
         
     }
-    public static void CreateNewItem(物品 item)
+    public static void CreateNewItem(Item item)
     {
         Slot newItem=Instantiate(instance.slotPrefab,instance.slotGrid.transform.position,Quaternion.identity);
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
-        newItem.slotImage.sprite = item.物品图片;
+        newItem.slotImage.sprite = item.ItemImg;
         newItem.slotImage.transform.localScale=new Vector3(1,1,1);
-        newItem.slotNumber.text = item.当前持有.ToString();
+        newItem.slotNumber.text = item.Hold.ToString();
     }
 
     public static void RefreshItem(int index)
@@ -50,15 +51,15 @@ public class InventoryManager : MonoBehaviour
             Destroy(instance.slotGrid.transform.GetChild(i).gameObject);
         }
 
-        //for (int i = 0; i < instance.mybag.玩家物品.Count; i++)
+        //for (int i = 0; i < instance.mybag.HoldItem.Count; i++)
         //{
-        //    CreateNewItem(instance.mybag.玩家物品[i]);
+        //    CreateNewItem(instance.mybag.HoldItem[i]);
         //}
 
        
         int count = instance.mybag.pagenow.Count;
         int fullcount = count / 15;
-        List<物品> list = instance.mybag.pagenow;
+        List<Item> list = instance.mybag.pagenow;
 
         if (index <= fullcount)
         {
@@ -75,50 +76,51 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-    public static void Operate_add(string 物品名称)//增加物品
+    public static void Operate_add(string a)//增加Item
     {
-        物品 item = Resources.Load<物品>("item/" + 物品名称);
-        int index = Exist(Resources.Load<加载物品>("mybag"), item.物品名称);
-        if (index == -1)
+        Item temp = Resources.Load<Item>("item/" + a);
+        int k = Exist(Resources.Load<Bag>("mybag"), temp.ItemName);
+        if (k == -1)
         {
-            Resources.Load<加载物品>("mybag").玩家物品.Add(item);
-            CreateNewItem(item);
+            Resources.Load<Bag>("mybag").HoldItem.Add(temp);
+            InventoryManager.CreateNewItem(temp);
         }
         else
         {
-            Resources.Load<加载物品>("mybag").玩家物品[index].当前持有 += 1;
+            Resources.Load<Bag>("mybag").HoldItem[k].Hold += 1;
         }
-        RefreshItem(1);
+        InventoryManager.RefreshItem(1);
     }
-
-    public static void Operate_remove(string 物品名称)
+    public static void Operate_remove(string a)
     {
-        物品 item = Resources.Load<物品>("item/" + 物品名称);
-        int index = Exist(Resources.Load<加载物品>("mybag"), item.物品名称);
-        if (index == -1)
+        Item temp = Resources.Load<Item>("item/" + a);
+        int k = Exist(Resources.Load<Bag>("mybag"), temp.ItemName);
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("不存在");
-            //提示不存在
-        }
-        else
-        {
-            Resources.Load<加载物品>("mybag").玩家物品[index].当前持有 -= 1;
-            if (Resources.Load<加载物品>("mybag").玩家物品[index].当前持有 == 0)
+            if (k == -1)
             {
-                Resources.Load<加载物品>("mybag").玩家物品[index].当前持有 = 1;
-                Resources.Load<加载物品>("mybag").玩家物品.RemoveAt(index);
+                //提示不存在
+            }
+            else
+            {
+                Resources.Load<Bag>("mybag").HoldItem[k].Hold -= 1;
+                if (Resources.Load<Bag>("mybag").HoldItem[k].Hold == 0)
+                {
+                    Resources.Load<Bag>("mybag").HoldItem[k].Hold = 1;
+                    Resources.Load<Bag>("mybag").HoldItem.RemoveAt(k);
+                }
             }
         }
-        RefreshItem(1);
+        InventoryManager.RefreshItem(1);
     }
 
 
 
-    static int Exist(加载物品 itemLoad, string 物品名称)
+    public static int Exist(Bag a, string b)//a 背包  b 物品名
     {
-        for (int i = 0; i < itemLoad.玩家物品.Count; i++)
+        for (int i = 0; i < a.HoldItem.Count; i++)
         {
-            if (itemLoad.玩家物品[i].物品名称 == 物品名称)
+            if (a.HoldItem[i].ItemName == b)
             {
                 return i;
             }

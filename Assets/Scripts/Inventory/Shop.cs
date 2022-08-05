@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+[CreateAssetMenu(fileName = "New ShopBag", menuName = "Inventory/New Shopbag")]
+public class Shop : ScriptableObject
 {
-    public List<物品> shoplist=new List<物品>();
+    public List<Item> shoplist=new List<Item>();
 }

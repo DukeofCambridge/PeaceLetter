@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd35e72eccf71094592bba2403de3e7b, type: 3}
   m_Name: mybag
   m_EditorClassIdentifier: 
-  "\u73A9\u5BB6\u7269\u54C1":
+  HoldItem:
+  - {fileID: 11400000, guid: e17e413e1675f00479b2e45366288919, type: 2}
+  food:
   - {fileID: 11400000, guid: e17e413e1675f00479b2e45366288919, type: 2}
   menu: []
   normalitem: []
-  forsale:
-  - {fileID: 11400000, guid: 4f12036b3c324314b921f7679f4ddf5c, type: 2}
-  - {fileID: 11400000, guid: 25506dc1e594b854981685fe695cc02e, type: 2}
-  others:
-  - {fileID: 11400000, guid: 6b81a96d402be8a4bb91f21a0e169b90, type: 2}
+  forsale: []
+  others: []
   pagenow:
   - {fileID: 11400000, guid: e17e413e1675f00479b2e45366288919, type: 2}

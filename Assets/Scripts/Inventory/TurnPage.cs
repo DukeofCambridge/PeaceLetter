@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class 翻页 : MonoBehaviour
+public class TurnPage : MonoBehaviour
 {
     public GameObject page;
     public int i = 1;

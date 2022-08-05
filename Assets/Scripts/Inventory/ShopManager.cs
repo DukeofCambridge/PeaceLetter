@@ -10,7 +10,6 @@ public class ShopManager : MonoBehaviour
     public Shop shopbag;
     public GameObject slotGrid;
     public Slot slotPrefab;
-    public Text iteminfo;
     public Image Img;
     private void Awake()
     {
@@ -22,16 +21,16 @@ public class ShopManager : MonoBehaviour
     private void OnEnable()
     {
         RefreshItem();
-        instance.iteminfo.text = "";
     }
 
-    public static void CreateNewItem(物品 item)
+    public static void CreateNewItem(Item item)
     {
         Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
-        newItem.slotImage.sprite = item.物品图片;
-        newItem.slotNumber.text = item.当前持有.ToString();
+        newItem.slotImage.sprite = item.ItemImg;
+        newItem.slotImage.transform.localScale = new Vector3(1, 1, 1);
+        newItem.slotNumber.text = item.Hold.ToString();
     }
 
     public static void RefreshItem()
@@ -45,5 +44,36 @@ public class ShopManager : MonoBehaviour
         {
             CreateNewItem(instance.shopbag.shoplist[i]);
         }
+    }
+
+    public static void Operate_Buy()//成功购买逻辑
+    {
+        int k = Exist(Resources.Load<Shop>("shopbag"), Slot.tempname);
+        Resources.Load<Shop>("shopbag").shoplist[k].Hold -= 1;
+        if (Resources.Load<Shop>("shopbag").shoplist[k].Hold == 0)
+        {
+            Resources.Load<Shop>("shopbag").shoplist[k].Hold = 1;
+            Resources.Load<Shop>("shopbag").shoplist.RemoveAt(k);
+        }
+        Test.Operate_add(Slot.tempname);
+        Slot.tempname = "";
+        RefreshItem();
+    }
+
+    public static int Exist(Shop a, string b)//a 背包  b 物品名
+    {
+        for (int i = 0; i < a.shoplist.Count; i++)
+        {
+            if (a.shoplist[i].ItemName == b)
+            {
+                return i;
+            }
+            else continue;
+        }
+        return -1;
+    }
+    public static void Confirm()
+    {
+        Operate_Buy();
     }
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4d0976002de7940a394a3966237412, type: 3}
   m_Name: "\u9526\u7F0E"
   m_EditorClassIdentifier: 
-  "\u7269\u54C1\u540D\u79F0": "\u9526\u7F0E"
-  "\u7269\u54C1\u56FE\u7247": {fileID: 21300000, guid: 28d6282065c5e624494aaa47933302c1, type: 3}
-  "\u7269\u54C1\u63CF\u8FF0": 
-  "\u7269\u54C1\u5206\u7C7B": 7
-  "\u7269\u54C1\u8BA1\u91CF": "\u5339"
-  "\u7269\u54C1\u4EF7\u683C": 1000
-  "\u5F53\u524D\u6301\u6709": 1
+  ItemName: "\u9526\u7F0E"
+  ItemImg: {fileID: 21300000, guid: 28d6282065c5e624494aaa47933302c1, type: 3}
+  ItemDescription: 
+  ItemCategory: 3
+  ItemMeasure: "\u5339"
+  ItemPrice: 1000
+  Hold: 1

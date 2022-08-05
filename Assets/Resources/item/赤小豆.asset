@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4d0976002de7940a394a3966237412, type: 3}
   m_Name: "\u8D64\u5C0F\u8C46"
   m_EditorClassIdentifier: 
-  "\u7269\u54C1\u540D\u79F0": "\u8D64\u5C0F\u8C46"
-  "\u7269\u54C1\u56FE\u7247": {fileID: 21300000, guid: 8cc9c90f164cd3a4ab3ff3ffddad0236, type: 3}
-  "\u7269\u54C1\u63CF\u8FF0": "\u7EA2\u8C46\u751F\u5357\u56FD\uFF0C\u6625\u6765\u53D1\u51E0\u679D\u3002"
-  "\u7269\u54C1\u5206\u7C7B": 0
-  "\u7269\u54C1\u8BA1\u91CF": "\u4EFD"
-  "\u7269\u54C1\u4EF7\u683C": 3
-  "\u5F53\u524D\u6301\u6709": 1
+  ItemName: "\u8D64\u5C0F\u8C46"
+  ItemImg: {fileID: 21300000, guid: 8cc9c90f164cd3a4ab3ff3ffddad0236, type: 3}
+  ItemDescription: "\u7EA2\u8C46\u751F\u5357\u56FD\uFF0C\u6625\u6765\u53D1\u51E0\u679D\u3002\u2014\u2014\uFF08\u5510\uFF09\u738B\u7EF4\u300A\u76F8\u601D\u300B"
+  ItemCategory: 0
+  ItemMeasure: "\u4EFD"
+  ItemPrice: 3
+  Hold: 1
